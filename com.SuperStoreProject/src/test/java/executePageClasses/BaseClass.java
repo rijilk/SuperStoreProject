@@ -22,6 +22,7 @@ public class BaseClass {
 	WebDriver driver;
 	public static Properties property;
 	
+	
 	public static void readProperty() throws IOException {
 		
 		property=new Properties();
