@@ -25,6 +25,15 @@ public class DashboardPageClass {
 	@FindBy(xpath = "//a[@href='/payrollapp/client/index']")
 	WebElement clients;
 	
+	@FindBy(xpath = "//a[@href='/payrollapp/worker/index']")
+	WebElement workers;
+	
+	@FindBy(xpath = "//a[@href='/payrollapp/deduction/index']")
+	WebElement deduction;
+	
+	@FindBy(xpath = "//img[@src='/payrollapp/images/logo.png']")
+	WebElement logo;
+	
 	public boolean isWelcomeMsgDispalyed() {
 		
 		return gl.isDisplayedMethod(welcomeMsg);
@@ -38,4 +47,22 @@ public class DashboardPageClass {
     public void clickOnClientsTab() {
     	gl.clickElement(clients);
     }
+    
+    public void clickOnWorkersTab() {
+    	
+    	gl.clickElement(workers);
+    }
+    
+    public void clickOnDeductionsTab() {
+    	
+    	gl.clickElement(deduction);
+    }
+    
+    public boolean isLogoDisplayed() {
+    	
+    	return gl.isDisplayedMethod(logo);
+    	
+    }
+    
+
 }

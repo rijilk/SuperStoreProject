@@ -31,5 +31,13 @@ public class ExecuteDashboardPageClass extends BaseClass {
 	  Assert.assertEquals(Actual_Result,exp_Result);
 	  
   }
+  @Test
+  public void verifyLogoisDisplayed() {
+	  lp=new LoginPageClass(driver);
+	  dp=new DashboardPageClass(driver);
+	  lp.login("carol","1q2w3e4r");
+	  Boolean Actual_result=dp.isLogoDisplayed();
+	  Assert.assertTrue(Actual_result);
+  }
   
 }

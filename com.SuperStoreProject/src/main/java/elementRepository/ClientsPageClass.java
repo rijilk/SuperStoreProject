@@ -1,16 +1,24 @@
 package elementRepository;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.FluentWait;
 
+import utility.ExcellRead;
+import utility.ExiplicitWait;
+import utility.FluentWaitClass;
 import utility.GeneralUtilities;
 
 public class ClientsPageClass {
 	
 	WebDriver driver;
 	GeneralUtilities gl=new GeneralUtilities();
+	ExiplicitWait eWait=new ExiplicitWait();
+	FluentWaitClass fWait=new FluentWaitClass();
 	
 	public ClientsPageClass(WebDriver driver) {
 		
@@ -80,6 +88,10 @@ public class ClientsPageClass {
 	
 	@FindBy(xpath = "//table//tbody//tr[3]//td")
 	WebElement createdClientName;
+	
+	@FindBy(xpath = "//table/tbody/tr[1]//td[2]")
+	WebElement searchClientName;
+	
 	
 	public void clickOnCreateClientTab() {
 		
@@ -162,5 +174,50 @@ public class ClientsPageClass {
 		return gl.isDisplayedMethod(createdClientName);
 	}
 	
+	public void searchMethod(String str) {
+		
+		eWait.elementToBeClickableWait(driver,searchButton);
+		gl.typeIntoElement(serachBoxClientName,str);
+		gl.clickElement(searchButton);
+		
+	}
+	
+	public boolean isSearchClientNameDisplayed() {
+		fWait.visibilityofWait(driver, searchClientName);
+		return gl.isDisplayedMethod(searchClientName);
+	}
+
+	public String readInvoicContact(int r,int c) throws IOException {
+		return ExcellRead.readIntegerData(r,c);
+		}
+	
+	public String readClientName(int r,int c) throws IOException {
+		return ExcellRead.readStringData(r,c);
+		}
+
+		public String readPhoneNumber(int r,int c) throws IOException {
+		return ExcellRead.readIntegerData(r,c);
+		}
+
+		public String readClientAddress(int r,int c) throws IOException {
+		return ExcellRead.readStringData(r,c);
+		}
+
+		public String readSettelmentDays(int r,int c) throws IOException {
+		return ExcellRead.readIntegerData(r,c);
+		}
+
+		public String readPostCode(int r,int c) throws IOException {
+		return ExcellRead.readIntegerData(r,c);
+		}
+
+		public String readEmail(int r,int c) throws IOException {
+		return ExcellRead.readStringData(r,c);
+		}
+
+		public String readCompanyReg(int r,int c) throws IOException {
+		return ExcellRead.readStringData(r,c);
+		}
+
 	 
 }

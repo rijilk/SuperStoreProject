@@ -6,13 +6,16 @@ import javax.swing.text.Element;
 
 import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.github.dockerjava.api.model.Driver;
 
 public class GeneralUtilities {
+	
 	
 	public String getCurrentUrlofPage(WebDriver driver)
 	{
@@ -89,5 +92,13 @@ public class GeneralUtilities {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", element);
 	}
+	
+	public void sendKeysClick(WebDriver driver,WebElement element) {
+		
+		Actions action=new Actions(driver);
+		action.sendKeys(element, Keys.ENTER).build().perform();
+	}
+	
+	
 	
 }

@@ -18,21 +18,21 @@ public class ExecuteLoginPageClass extends BaseClass {
 	 
   }
   
-  @Test
-  public void verifySuccessfullLogin() {
+  @Test(dataProviderClass = DataProviderLogin.class,dataProvider  ="DataProvider2")
+  public void verifySuccessfullLogin(String name,String pass) {
 	  
 	  lp=new LoginPageClass(driver);
-	  lp.login("carol","1q2w3e4r");
+	  lp.login(name,pass);
 	  boolean actual_Result=lp.isCarolThomasDisplayed();
 	  Assert.assertTrue(actual_Result);
 
   }
   
-  @Test
-  public void verifyUnSuccessfullLogin() {
+  @Test(dataProviderClass = DataProviderLogin.class,dataProvider = "DataProvider1")
+  public void verifyUnSuccessfullLogin(String name,String pass) {
 	  
 	  lp=new LoginPageClass(driver);
-	  lp.login("carol","12");
+	  lp.login(name,pass);
 	  String actual_Result=lp.getTextOfIncorrectMessage();
 	  String exp_Result="Incorrect username or password.";
 	  Assert.assertEquals(actual_Result,exp_Result);
