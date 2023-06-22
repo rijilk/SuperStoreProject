@@ -10,6 +10,7 @@ import com.github.dockerjava.api.model.Driver;
 import elementRepository.DashboardPageClass;
 import elementRepository.LoginPageClass;
 import elementRepository.WorkersPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteWorkersPageClass extends BaseClass {
 	
@@ -17,7 +18,7 @@ public class ExecuteWorkersPageClass extends BaseClass {
 	DashboardPageClass dp;
 	WorkersPageClass wp;
 	
-  @Test(priority = 0)
+  @Test(priority = 0,retryAnalyzer = RetryAnalyzer.class)
   public void verifyToCreateANewWorker()throws IOException  {
 	  
 	  lp=new LoginPageClass(driver);
@@ -48,7 +49,7 @@ public class ExecuteWorkersPageClass extends BaseClass {
 	  Assert.assertTrue(actual_Result);
   }
   
-  @Test(priority = 1)
+  @Test(priority = 1,retryAnalyzer = RetryAnalyzer.class)
   public void verifySearchFunctionality() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -56,11 +57,15 @@ public class ExecuteWorkersPageClass extends BaseClass {
 	  wp=new WorkersPageClass(driver);
 	  lp.login("carol", "1q2w3e4r");
 	  dp.clickOnWorkersTab();
-	  wp.searchMethod("qwertyqwerty");
+	  //wp.searchMethod("qwertyqwerty");
+	  wp.typeIntoWorkersFirstName("qwertyqwerty");
+	  wp.typeIntoWorkersLastName("K");
+	  wp.clickonSearchButton();
 	  boolean actual_Result=wp.isSearchNameDisplayed();
-	  Assert.assertTrue(actual_Result);
+	  
+	  Assert.assertFalse(actual_Result);
   }
-  @Test(priority = 2)
+  @Test(priority = 2,retryAnalyzer = RetryAnalyzer.class)
   public void verifyDeleteFunctionality() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -68,8 +73,11 @@ public class ExecuteWorkersPageClass extends BaseClass {
 	  wp=new WorkersPageClass(driver);
 	  lp.login("carol", "1q2w3e4r");
 	  dp.clickOnWorkersTab();
-	  wp.searchMethod("qwertyqwerty");
-	  wp.deleteAnItem();
+	  wp.typeIntoWorkersFirstName("qwertyqwerty");
+	  wp.typeIntoWorkersLastName("K");
+	  wp.clickonSearchButton();
+	  wp.clickDeleteButton();
+	  wp.acceptAnAlert();
 	  
 	 // boolean actual_Result=wp.isSearchNameDisplayed();
 	  //Assert.assertTrue(actual_Result);

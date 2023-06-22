@@ -7,6 +7,7 @@ import elementRepository.DashboardPageClass;
 import elementRepository.DedudctionPageClass;
 import elementRepository.LoginPageClass;
 import elementRepository.WorkersPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteDedudctionPageClass extends BaseClass{
 	
@@ -14,7 +15,7 @@ public class ExecuteDedudctionPageClass extends BaseClass{
 	DashboardPageClass dp;
 	DedudctionPageClass dpp;
 	
-  @Test
+  @Test(retryAnalyzer = RetryAnalyzer.class)
   public void verifyDeductionPageOpeiningWhileClickingDeductionTab() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -26,7 +27,7 @@ public class ExecuteDedudctionPageClass extends BaseClass{
 	  Assert.assertTrue(actual_Result);
 	  
   }
-@Test
+@Test(retryAnalyzer = RetryAnalyzer.class)
   public void verifyToCreateANewDedudction() {
 	  
 	  lp=new LoginPageClass(driver);

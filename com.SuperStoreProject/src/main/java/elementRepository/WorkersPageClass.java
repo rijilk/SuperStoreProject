@@ -76,11 +76,14 @@ public class WorkersPageClass {
 	@FindBy(xpath = "//button[text()='Search']")
 	WebElement searchButton;
 	
-	@FindBy(xpath = "(//*[contains(text(),'Rijil')])[2]")
+	@FindBy(xpath = "(//*[contains(text(),'Qwertyqwerty K')])[2]")
 	WebElement createdWorker;
 	
 	@FindBy(xpath = "//input[@id='workersearch-first_name']")
 	WebElement searchFirstName;
+	
+	@FindBy(xpath = "//input[@id='workersearch-last_name']")
+	WebElement searchLastName;
 	
 	@FindBy(xpath = "//table//tbody//tr[1]//td[2]")
 	WebElement searchWorkerName;
@@ -127,7 +130,6 @@ public class WorkersPageClass {
 	
 	public void typeIntoDOB(String str) {
 		gl.typeIntoElement(dob,str);
-		//gl.sendKeysClick(driver);
 	}
 	
 	public void selectValueFromEmployementType(int index) {
@@ -137,11 +139,9 @@ public class WorkersPageClass {
 	public void typeIntoAddress(String str) {
 		gl.typeIntoElement(address,str);
 	}
-	
 	public void selectValueFromPayslipMethodn(int index) {
 		gl.selectByIndexMethod(payslipMethod,index);
 	}
-	
 	public void typeIntoPhone(String str) {
 		gl.typeIntoElement(phone,str);
 	}
@@ -165,7 +165,6 @@ public class WorkersPageClass {
 	public void typeIntoAccountNumber(String str) {
 		gl.typeIntoElement(accountNumber,str);
 	}
-	
 	public void typeIntoSortCode(String str) {
 		gl.typeIntoElement(sortCode,str);
 	}
@@ -179,10 +178,12 @@ public class WorkersPageClass {
 		
 		return ExcellRead.readStringData(r,c);
 	}
+	
 	public String readDOB(int r,int c)throws IOException{
 		
 		return ExcellRead.readStringData(r,c);
 	}
+	
 	public String readAddress(int r,int c)throws IOException{
 		
 		return ExcellRead.readStringData(r,c);
@@ -196,21 +197,21 @@ public class WorkersPageClass {
 		
 		return ExcellRead.readIntegerData(r,c);
 	}
-
+	
 	public String readEmail(int r,int c)throws IOException{
 		
 		return ExcellRead.readStringData(r,c);
 	}
+	
 	public String readPostCode(int r,int c)throws IOException{
 	
 	return ExcellRead.readIntegerData(r,c);
 	}
-	
 	public String readAccountName(int r,int c)throws IOException{
 		
 		return ExcellRead.readStringData(r,c);
 	}
-
+	
 	public String readAccountNumber(int r,int c)throws IOException{
 	
 	return ExcellRead.readIntegerData(r,c);
@@ -234,12 +235,10 @@ public class WorkersPageClass {
 		return gl.isDisplayedMethod(createdWorker);
 	}
 	
-	public void searchMethod(String str) {
+	public void clickonSearchButton() {
 		
 		eWait.elementToBeClickableWait(driver,searchButton);
-		gl.typeIntoElement(searchFirstName,str);
-		gl.clickElement(searchButton);
-		
+		gl.clickElement(searchButton);	
 	}
 	
 	public boolean isSearchNameDisplayed() {
@@ -247,9 +246,22 @@ public class WorkersPageClass {
 		return gl.isDisplayedMethod(searchWorkerName);
 	}
 	
-	public void deleteAnItem() {
-		gl.clickElement(deletElement);
+	public void typeIntoWorkersFirstName(String str){
+		gl.typeIntoElement(searchFirstName, str);
+	}
+	
+	public void typeIntoWorkersLastName(String str){
+		gl.typeIntoElement(searchLastName, str);
+	}
+	
+	public void clickDeleteButton() {
+		eWait.elementToBeClickableWait(driver, deletElement);
+		gl.javaScriptClicktMethod(driver,deletElement);
+	}
+
+	public void acceptAnAlert() {
 		gl.acceptAlert(driver);
 	}
+
 	
 }

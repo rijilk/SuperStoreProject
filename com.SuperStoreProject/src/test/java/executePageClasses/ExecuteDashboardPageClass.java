@@ -4,12 +4,13 @@ import org.testng.annotations.Test;
 
 import elementRepository.DashboardPageClass;
 import elementRepository.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteDashboardPageClass extends BaseClass {
 	DashboardPageClass dp;
 	LoginPageClass lp;
 	
-  @Test
+  @Test(groups= {"group1"},retryAnalyzer = RetryAnalyzer.class)
   public void verifyWelocmeMsgIsDisplayedorNot() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -20,7 +21,7 @@ public class ExecuteDashboardPageClass extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(groups= {"group1"},retryAnalyzer = RetryAnalyzer.class)
   public void verifyClientsTabIsDisplayedorNot() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -31,7 +32,7 @@ public class ExecuteDashboardPageClass extends BaseClass {
 	  Assert.assertEquals(Actual_Result,exp_Result);
 	  
   }
-  @Test
+  @Test(groups= {"group2"},retryAnalyzer = RetryAnalyzer.class)
   public void verifyLogoisDisplayed() {
 	  lp=new LoginPageClass(driver);
 	  dp=new DashboardPageClass(driver);

@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executePageClasses.ExecuteLoginPageClass">
+      <class name="executePageClasses.ExecuteWorkersPageClass">
         <methods>
+          <include name="verifySearchFunctionality"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="verifyCorrectPageIsOpenWhileHittingTheUrl"/>
+          <include name="verifyToCreateANewWorker"/>
+          <include name="verifyDeleteFunctionality"/>
         </methods>
-      </class> <!-- executePageClasses.ExecuteLoginPageClass -->
+      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

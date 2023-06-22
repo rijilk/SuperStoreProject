@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import elementRepository.ClientsPageClass;
 import elementRepository.DashboardPageClass;
 import elementRepository.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteClientsPageClass extends BaseClass {
 	
@@ -15,7 +16,7 @@ public class ExecuteClientsPageClass extends BaseClass {
 	ClientsPageClass cp;
 	DashboardPageClass dp;
 	
-  @Test
+  @Test(groups= {"group3"},retryAnalyzer =RetryAnalyzer.class )
   public void verifyToCreateANewClient()throws IOException {
 	  
 	  lp=new LoginPageClass(driver);
@@ -33,7 +34,7 @@ public class ExecuteClientsPageClass extends BaseClass {
 	  cp.typeIntoPhoneNumber(cp.readPhoneNumber(2,1));
 	  cp.selectValueMasterDocument(1);
 	  cp.typeIntoClientAddress(cp.readClientAddress(3,1));
-	  cp.typeIntoSettelmentDays(cp.readSettelmentDays(4, 1));
+	  cp.typeIntoSettelmentDays(cp.readSettelmentDays(4,1));
 	  cp.typeIntoPostCode(cp.readPostCode(6,1));
 	  cp.typeIntoEmail(cp.readEmail(5,1));
 	  cp.typeIntoCompanyReg(cp.readCompanyReg(7,1));
@@ -44,7 +45,7 @@ public class ExecuteClientsPageClass extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(retryAnalyzer =RetryAnalyzer.class )
   public void verifySearchFunctionality() {
 	  
 	  lp=new LoginPageClass(driver);

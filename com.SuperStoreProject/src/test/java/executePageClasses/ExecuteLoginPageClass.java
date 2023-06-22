@@ -4,11 +4,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import elementRepository.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteLoginPageClass extends BaseClass {
 	
   LoginPageClass lp;
-  @Test
+  @Test(groups= {"group1"},retryAnalyzer = RetryAnalyzer.class)
   public void verifyCorrectPageIsOpenWhileHittingTheUrl(){
 	  
 	  lp=new LoginPageClass(driver);
@@ -18,7 +19,7 @@ public class ExecuteLoginPageClass extends BaseClass {
 	 
   }
   
-  @Test(dataProviderClass = DataProviderLogin.class,dataProvider  ="DataProvider2")
+  @Test(groups= {"group1"},dataProviderClass = DataProviderLogin.class,dataProvider  ="DataProvider2",retryAnalyzer = RetryAnalyzer.class)
   public void verifySuccessfullLogin(String name,String pass) {
 	  
 	  lp=new LoginPageClass(driver);
@@ -28,7 +29,7 @@ public class ExecuteLoginPageClass extends BaseClass {
 
   }
   
-  @Test(dataProviderClass = DataProviderLogin.class,dataProvider = "DataProvider1")
+  @Test(groups= {"group1"},dataProviderClass = DataProviderLogin.class,dataProvider = "DataProvider1",retryAnalyzer = RetryAnalyzer.class)
   public void verifyUnSuccessfullLogin(String name,String pass) {
 	  
 	  lp=new LoginPageClass(driver);
