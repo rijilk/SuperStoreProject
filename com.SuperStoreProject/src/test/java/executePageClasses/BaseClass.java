@@ -58,10 +58,10 @@ public class BaseClass {
 			ScreenShot scrsht = new ScreenShot();
 			scrsht.takeScrennShot(driver, itr.getName());
 		}
-		driver.quit();
+		//driver.quit();
 	}
 
-	@BeforeSuite(alwaysRun = true)
+	@BeforeSuite(alwaysRun = false)
 	public void createReport(final ITestContext testContext) {
 		extendReport.ExtentManager.createInstance().createTest(testContext.getName(), "message");
 	}

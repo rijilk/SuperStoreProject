@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="5" ignored="0" total="8" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-22T21:47:26 IST" name="Suite" finished-at="2023-06-22T21:48:27 IST" duration-ms="61019">
+  <suite started-at="2023-06-23T20:45:01 IST" name="Suite" finished-at="2023-06-23T20:45:21 IST" duration-ms="20271">
     <groups>
     </groups>
-    <test started-at="2023-06-22T21:47:26 IST" name="chromeTest" finished-at="2023-06-22T21:48:27 IST" duration-ms="60600">
-      <class name="executePageClasses.ExecuteWorkersPageClass">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:26 IST" name="beforeMethod" finished-at="2023-06-22T21:47:36 IST" duration-ms="10360" status="PASS">
+    <test started-at="2023-06-23T20:45:01 IST" name="chromeTest" finished-at="2023-06-23T20:45:18 IST" duration-ms="17394">
+      <class name="executePageClasses.ExecuteDedudctionPageClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:01 IST" name="beforeMethod" finished-at="2023-06-23T20:45:06 IST" duration-ms="4796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToCreateANewWorker()[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:36 IST" name="verifyToCreateANewWorker" finished-at="2023-06-22T21:47:43 IST" duration-ms="6964" status="PASS">
+        <test-method signature="verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:06 IST" name="verifyDeductionPageOpeiningWhileClickingDeductionTab" finished-at="2023-06-23T20:45:09 IST" duration-ms="2617" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyToCreateANewWorker -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:43 IST" name="afterMethod" finished-at="2023-06-22T21:47:44 IST" duration-ms="235" status="PASS">
+        </test-method> <!-- verifyDeductionPageOpeiningWhileClickingDeductionTab -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:09 IST" name="afterMethod" finished-at="2023-06-23T20:45:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyToCreateANewWorker status=SUCCESS method=ExecuteWorkersPageClass.verifyToCreateANewWorker()[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDeductionPageOpeiningWhileClickingDeductionTab status=SUCCESS method=ExecuteDedudctionPageClass.verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:44 IST" name="beforeMethod" finished-at="2023-06-22T21:47:47 IST" duration-ms="3112" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:09 IST" name="beforeMethod" finished-at="2023-06-23T20:45:12 IST" duration-ms="3214" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,445 +44,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:47 IST" name="verifySearchFunctionality" finished-at="2023-06-22T21:47:49 IST" duration-ms="2710" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at executePageClasses.ExecuteWorkersPageClass.verifySearchFunctionality(ExecuteWorkersPageClass.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:12 IST" name="verifyToCreateANewDedudction" finished-at="2023-06-23T20:45:18 IST" duration-ms="6686" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:49 IST" name="afterMethod" finished-at="2023-06-22T21:47:50 IST" duration-ms="186" status="PASS">
+        </test-method> <!-- verifyToCreateANewDedudction -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:18 IST" name="afterMethod" finished-at="2023-06-23T20:45:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchFunctionality status=SKIP method=ExecuteWorkersPageClass.verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyToCreateANewDedudction status=SUCCESS method=ExecuteDedudctionPageClass.verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:50 IST" name="beforeMethod" finished-at="2023-06-22T21:47:52 IST" duration-ms="2878" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:52 IST" name="verifySearchFunctionality" finished-at="2023-06-22T21:47:55 IST" duration-ms="2670" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at executePageClasses.ExecuteWorkersPageClass.verifySearchFunctionality(ExecuteWorkersPageClass.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:55 IST" name="afterMethod" finished-at="2023-06-22T21:47:55 IST" duration-ms="153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchFunctionality status=SKIP method=ExecuteWorkersPageClass.verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:55 IST" name="beforeMethod" finished-at="2023-06-22T21:47:58 IST" duration-ms="2924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:58 IST" name="verifySearchFunctionality" finished-at="2023-06-22T21:48:01 IST" duration-ms="2713" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at executePageClasses.ExecuteWorkersPageClass.verifySearchFunctionality(ExecuteWorkersPageClass.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:01 IST" name="afterMethod" finished-at="2023-06-22T21:48:01 IST" duration-ms="211" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchFunctionality status=SKIP method=ExecuteWorkersPageClass.verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:01 IST" name="beforeMethod" finished-at="2023-06-22T21:48:04 IST" duration-ms="2900" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:04 IST" name="verifySearchFunctionality" finished-at="2023-06-22T21:48:07 IST" duration-ms="2866" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at executePageClasses.ExecuteWorkersPageClass.verifySearchFunctionality(ExecuteWorkersPageClass.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:07 IST" name="afterMethod" finished-at="2023-06-22T21:48:07 IST" duration-ms="156" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchFunctionality status=SKIP method=ExecuteWorkersPageClass.verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:07 IST" name="beforeMethod" finished-at="2023-06-22T21:48:11 IST" duration-ms="4125" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:11 IST" name="verifySearchFunctionality" finished-at="2023-06-22T21:48:14 IST" duration-ms="2735" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at executePageClasses.ExecuteWorkersPageClass.verifySearchFunctionality(ExecuteWorkersPageClass.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:14 IST" name="afterMethod" finished-at="2023-06-22T21:48:14 IST" duration-ms="104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchFunctionality status=SKIP method=ExecuteWorkersPageClass.verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:14 IST" name="beforeMethod" finished-at="2023-06-22T21:48:17 IST" duration-ms="2977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:17 IST" name="verifySearchFunctionality" finished-at="2023-06-22T21:48:20 IST" duration-ms="2678" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at executePageClasses.ExecuteWorkersPageClass.verifySearchFunctionality(ExecuteWorkersPageClass.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:20 IST" name="afterMethod" finished-at="2023-06-22T21:48:20 IST" duration-ms="728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchFunctionality status=FAILURE method=ExecuteWorkersPageClass.verifySearchFunctionality()[pri:1, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:20 IST" name="beforeMethod" finished-at="2023-06-22T21:48:24 IST" duration-ms="3200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeleteFunctionality()[pri:2, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:24 IST" name="verifyDeleteFunctionality" finished-at="2023-06-22T21:48:26 IST" duration-ms="2814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:48:26 IST" name="afterMethod" finished-at="2023-06-22T21:48:27 IST" duration-ms="129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeleteFunctionality status=SUCCESS method=ExecuteWorkersPageClass.verifyDeleteFunctionality()[pri:2, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
+      </class> <!-- executePageClasses.ExecuteDedudctionPageClass -->
     </test> <!-- chromeTest -->
-    <test started-at="2023-06-22T21:48:27 IST" name="edgeTest" finished-at="2023-06-22T21:48:27 IST" duration-ms="6">
-      <class name="executePageClasses.ExecuteWorkersPageClass">
-        <test-method is-config="true" signature="createReport(org.testng.ITestContext)[pri:0, instance:executePageClasses.ExecuteWorkersPageClass@8dbfffb]" started-at="2023-06-22T21:47:26 IST" name="createReport" finished-at="2023-06-22T21:47:26 IST" duration-ms="24" status="PASS">
+    <test started-at="2023-06-23T20:45:01 IST" name="edgeTest" finished-at="2023-06-23T20:45:21 IST" duration-ms="20270">
+      <class name="executePageClasses.ExecuteDedudctionPageClass">
+        <test-method is-config="true" signature="createReport(org.testng.ITestContext)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:01 IST" name="createReport" finished-at="2023-06-23T20:45:01 IST" duration-ms="25" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@14499b52]]>
+                <![CDATA[org.testng.TestRunner@5d1659ea]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:01 IST" name="beforeMethod" finished-at="2023-06-23T20:45:07 IST" duration-ms="5946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:07 IST" name="verifyDeductionPageOpeiningWhileClickingDeductionTab" finished-at="2023-06-23T20:45:11 IST" duration-ms="3928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeductionPageOpeiningWhileClickingDeductionTab -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:11 IST" name="afterMethod" finished-at="2023-06-23T20:45:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeductionPageOpeiningWhileClickingDeductionTab status=SUCCESS method=ExecuteDedudctionPageClass.verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:11 IST" name="beforeMethod" finished-at="2023-06-23T20:45:16 IST" duration-ms="4653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:16 IST" name="verifyToCreateANewDedudction" finished-at="2023-06-23T20:45:21 IST" duration-ms="5669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToCreateANewDedudction -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:21 IST" name="afterMethod" finished-at="2023-06-23T20:45:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyToCreateANewDedudction status=SUCCESS method=ExecuteDedudctionPageClass.verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- executePageClasses.ExecuteDedudctionPageClass -->
     </test> <!-- edgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -10,8 +10,10 @@
 		
       <!--class name="executePageClasses.ExecuteDedudctionPageClass"/>
       <class name="executePageClasses.ExecuteClientsPageClass"/>
-      <class name="executePageClasses.ExecuteDashboardPageClass"/-->
-      <class name="executePageClasses.ExecuteWorkersPageClass"/>
+      <class name="executePageClasses.ExecuteDC:\Users\RIJIL K\git\TestRepository\com.SuperStoreProject\src\test\resources\sample.jpg
+      ashboardPageClass"/-->
+      <!--class name="executePageClasses.ExecuteWorkersPageClass"/-->
+      <class name="executePageClasses.ExecuteTimesheetPageClass"/>
       <!--class name="executePageClasses.ExecuteLoginPageClass"/-->
     </classes>
   </test> <!-- Test -->

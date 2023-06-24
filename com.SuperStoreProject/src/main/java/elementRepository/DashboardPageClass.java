@@ -31,6 +31,9 @@ public class DashboardPageClass {
 	@FindBy(xpath = "//a[@href='/payrollapp/deduction/index']")
 	WebElement deduction;
 	
+	@FindBy(xpath = "//a[@href='/payrollapp/timesheet/index']")
+	WebElement timeSheet;
+	
 	@FindBy(xpath = "//img[@src='/payrollapp/images/logo.png']")
 	WebElement logo;
 	
@@ -56,6 +59,11 @@ public class DashboardPageClass {
     public void clickOnDeductionsTab() {
     	
     	gl.clickElement(deduction);
+    }
+    
+    public void clickOnTimeSheetTab() {
+    	
+    	gl.clickElement(timeSheet);
     }
     
     public boolean isLogoDisplayed() {

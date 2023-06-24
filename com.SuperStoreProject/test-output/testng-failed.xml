@@ -7,14 +7,14 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="executePageClasses.ExecuteWorkersPageClass">
+      <class name="executePageClasses.ExecuteTimesheetPageClass">
         <methods>
-          <include name="verifySearchFunctionality"/>
           <include name="afterMethod"/>
-          <include name="beforeMethod"/>
           <include name="createReport"/>
+          <include name="beforeMethod"/>
+          <include name="VerifyToCreateANewTimesheet"/>
         </methods>
-      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
+      </class> <!-- executePageClasses.ExecuteTimesheetPageClass -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
