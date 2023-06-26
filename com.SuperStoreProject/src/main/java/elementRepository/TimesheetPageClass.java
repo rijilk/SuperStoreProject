@@ -6,15 +6,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import utility.FileUpload;
+import utility.FileUpload1;
 import utility.GeneralUtilities;
 
 public class TimesheetPageClass {
 
 	WebDriver driver;
 	GeneralUtilities gl=new GeneralUtilities();
-	FileUpload f=new FileUpload();
+	FileUpload1 f=new FileUpload1();
+	
 	public  TimesheetPageClass(WebDriver driver) {
 		
 		this.driver=driver;
@@ -28,8 +28,12 @@ public class TimesheetPageClass {
 	@FindBy(xpath = "//input[@class='file-caption-name']")
 	WebElement selectAnImage;
 	
-	@FindBy(xpath = "//*[text()='Browse …']//following::input")
+	//@FindBy(xpath = "//*[text()='Browse …']//following::input")
+	//WebElement browse;
+	
+	@FindBy(xpath = "//input[@id='file-logo']")
 	WebElement browse;
+	
 	
 	public void clickOnCreateTimeSheet() {
 		

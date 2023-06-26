@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-23T20:45:01 IST" name="Suite" finished-at="2023-06-23T20:45:21 IST" duration-ms="20271">
+  <suite started-at="2023-06-24T20:32:31 IST" name="Suite" finished-at="2023-06-24T20:32:43 IST" duration-ms="12349">
     <groups>
     </groups>
-    <test started-at="2023-06-23T20:45:01 IST" name="chromeTest" finished-at="2023-06-23T20:45:18 IST" duration-ms="17394">
-      <class name="executePageClasses.ExecuteDedudctionPageClass">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:01 IST" name="beforeMethod" finished-at="2023-06-23T20:45:06 IST" duration-ms="4796" status="PASS">
+    <test started-at="2023-06-24T20:32:31 IST" name="chromeTest" finished-at="2023-06-24T20:32:43 IST" duration-ms="11659">
+      <class name="executePageClasses.ExecuteTimesheetPageClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteTimesheetPageClass@e54303]" started-at="2023-06-24T20:32:31 IST" name="beforeMethod" finished-at="2023-06-24T20:32:37 IST" duration-ms="6152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,115 +18,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:06 IST" name="verifyDeductionPageOpeiningWhileClickingDeductionTab" finished-at="2023-06-23T20:45:09 IST" duration-ms="2617" status="PASS">
+        <test-method signature="VerifyToCreateANewTimesheet()[pri:0, instance:executePageClasses.ExecuteTimesheetPageClass@e54303]" started-at="2023-06-24T20:32:37 IST" name="VerifyToCreateANewTimesheet" finished-at="2023-06-24T20:32:43 IST" duration-ms="5445" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeductionPageOpeiningWhileClickingDeductionTab -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:09 IST" name="afterMethod" finished-at="2023-06-23T20:45:09 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- VerifyToCreateANewTimesheet -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteTimesheetPageClass@e54303]" started-at="2023-06-24T20:32:43 IST" name="afterMethod" finished-at="2023-06-24T20:32:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDeductionPageOpeiningWhileClickingDeductionTab status=SUCCESS method=ExecuteDedudctionPageClass.verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyToCreateANewTimesheet status=SUCCESS method=ExecuteTimesheetPageClass.VerifyToCreateANewTimesheet()[pri:0, instance:executePageClasses.ExecuteTimesheetPageClass@e54303] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:09 IST" name="beforeMethod" finished-at="2023-06-23T20:45:12 IST" duration-ms="3214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:12 IST" name="verifyToCreateANewDedudction" finished-at="2023-06-23T20:45:18 IST" duration-ms="6686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyToCreateANewDedudction -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4]" started-at="2023-06-23T20:45:18 IST" name="afterMethod" finished-at="2023-06-23T20:45:18 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyToCreateANewDedudction status=SUCCESS method=ExecuteDedudctionPageClass.verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@2dc995f4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- executePageClasses.ExecuteDedudctionPageClass -->
+      </class> <!-- executePageClasses.ExecuteTimesheetPageClass -->
     </test> <!-- chromeTest -->
-    <test started-at="2023-06-23T20:45:01 IST" name="edgeTest" finished-at="2023-06-23T20:45:21 IST" duration-ms="20270">
-      <class name="executePageClasses.ExecuteDedudctionPageClass">
-        <test-method is-config="true" signature="createReport(org.testng.ITestContext)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:01 IST" name="createReport" finished-at="2023-06-23T20:45:01 IST" duration-ms="25" status="PASS">
+    <test started-at="2023-06-24T20:32:43 IST" name="edgeTest" finished-at="2023-06-24T20:32:43 IST" duration-ms="3">
+      <class name="executePageClasses.ExecuteTimesheetPageClass">
+        <test-method is-config="true" signature="createReport(org.testng.ITestContext)[pri:0, instance:executePageClasses.ExecuteTimesheetPageClass@e54303]" started-at="2023-06-24T20:32:31 IST" name="createReport" finished-at="2023-06-24T20:32:31 IST" duration-ms="28" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5d1659ea]]>
+                <![CDATA[org.testng.TestRunner@66e21568]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:01 IST" name="beforeMethod" finished-at="2023-06-23T20:45:07 IST" duration-ms="5946" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:07 IST" name="verifyDeductionPageOpeiningWhileClickingDeductionTab" finished-at="2023-06-23T20:45:11 IST" duration-ms="3928" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeductionPageOpeiningWhileClickingDeductionTab -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:11 IST" name="afterMethod" finished-at="2023-06-23T20:45:11 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeductionPageOpeiningWhileClickingDeductionTab status=SUCCESS method=ExecuteDedudctionPageClass.verifyDeductionPageOpeiningWhileClickingDeductionTab()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:11 IST" name="beforeMethod" finished-at="2023-06-23T20:45:16 IST" duration-ms="4653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:16 IST" name="verifyToCreateANewDedudction" finished-at="2023-06-23T20:45:21 IST" duration-ms="5669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyToCreateANewDedudction -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72]" started-at="2023-06-23T20:45:21 IST" name="afterMethod" finished-at="2023-06-23T20:45:21 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyToCreateANewDedudction status=SUCCESS method=ExecuteDedudctionPageClass.verifyToCreateANewDedudction()[pri:0, instance:executePageClasses.ExecuteDedudctionPageClass@35f26e72] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- executePageClasses.ExecuteDedudctionPageClass -->
+      </class> <!-- executePageClasses.ExecuteTimesheetPageClass -->
     </test> <!-- edgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

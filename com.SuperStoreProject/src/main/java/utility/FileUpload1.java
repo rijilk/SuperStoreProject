@@ -6,34 +6,29 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+import javax.swing.plaf.basic.BasicBorders.RadioButtonBorder;
+
 import org.openqa.selenium.By;
 
-public class FileUpload {
+public class FileUpload1 {
 
-	public void fileUpload() throws AWTException {
+public void fileUpload() throws AWTException {
 		
-	
-	Robot rb = new Robot();
-	// Store the File path to the StringSelection class
 	StringSelection filePath = new StringSelection(System.getProperty("user.dir")+"\\src\\test\\resources\\sample.jpg");
-
-	//Copy above path to clipboard
 	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath,null);
+	Robot rb = new Robot();
+	rb.delay(3);
 	rb.keyPress(KeyEvent.VK_CONTROL);
 	rb.delay(2);
 	rb.keyPress(KeyEvent.VK_V);
 	rb.delay(2);
-	// release Contol+V for pasting
-	rb.keyRelease(KeyEvent.VK_CONTROL);
-	
 	rb.keyRelease(KeyEvent.VK_V);
-
-	// for pressing and releasing Enter
+	rb.keyRelease(KeyEvent.VK_CONTROL);
 	rb.keyPress(KeyEvent.VK_ENTER);
 	rb.delay(2);
 	rb.keyRelease(KeyEvent.VK_ENTER);
 	
 	System.out.println("file uploaded..");
-	//driver.findElement(By.id("file-submit")).click();
+	
 	}
 }

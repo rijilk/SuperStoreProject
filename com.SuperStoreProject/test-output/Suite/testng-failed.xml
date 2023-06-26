@@ -10,8 +10,8 @@
       <class name="executePageClasses.ExecuteTimesheetPageClass">
         <methods>
           <include name="afterMethod"/>
-          <include name="createReport"/>
           <include name="beforeMethod"/>
+          <include name="createReport"/>
           <include name="VerifyToCreateANewTimesheet"/>
         </methods>
       </class> <!-- executePageClasses.ExecuteTimesheetPageClass -->
